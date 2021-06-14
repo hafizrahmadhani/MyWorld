@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -20,7 +19,8 @@
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
                 android:scaleType="fitXY"
-                android:src="@drawable/ottawa"/>
+                android:contentDescription="@string/image"
+                android:src="@drawable/ottawa" />
         </FrameLayout>
 
         <TextView
@@ -67,7 +67,8 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:scaleType="fitXY"
-                android:src="@drawable/canada"/>
+                android:contentDescription="@string/image"
+                android:src="@drawable/canada" />
             <TextView
                 android:id="@+id/nationalFlag_received"
                 android:layout_width="match_parent"
@@ -98,7 +99,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="14dp"
-                android:text=": Amari usque ad mare"/>
+                android:text="@string/amari_usque_ad_mare" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -120,7 +121,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="14dp"
-                android:text=": Ottawa"/>
+                android:text="@string/ottawa" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -142,7 +143,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="14dp"
-                android:text=": English and France"/>
+                android:text="@string/english_and_france" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"
@@ -164,7 +165,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:textSize="14sp"
-                android:text=": Federal Parliamentery"/>
+                android:text="@string/federal_parliamentery" />
         </TableRow>
         <TableRow
             android:layout_width="match_parent"

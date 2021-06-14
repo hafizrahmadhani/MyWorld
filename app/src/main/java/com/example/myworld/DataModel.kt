@@ -1,8 +1,6 @@
 package com.example.myworld
 
 import android.os.Parcelable
-import android.widget.ImageView
-import android.widget.TextView
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize

@@ -1,12 +1,10 @@
 package com.example.myworld
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import androidx.appcompat.app.ActionBar
-import androidx.appcompat.widget.Toolbar
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -18,15 +16,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        RecyclerView()
+        recyclerView()
     }
 
-    private fun RecyclerView() {
+    private fun recyclerView() {
         rv_country.apply {
             val countryAdapter = ListCountryAdapter(CountryData.listData)
             adapter = countryAdapter
             layoutManager = LinearLayoutManager(context, RecyclerView.VERTICAL, false)
-            countryAdapter.setOnItemClickCallback(object : ListCountryAdapter.OnItemClickCallback{
+            countryAdapter.setOnItemClickCallback(object : ListCountryAdapter.OnItemClickCallback {
                 override fun onItemClicked(data: DataModel) {
                     val intent = Intent(this@MainActivity, CountryDetails::class.java)
                     intent.putExtra("Nama Negara", data)

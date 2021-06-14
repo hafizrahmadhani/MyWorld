@@ -23,7 +23,8 @@
             android:layout_marginEnd="15dp"
             android:layout_marginStart="8dp"
             android:scaleType="fitXY"
-            android:src="@android:color/white"/>
+            android:contentDescription="@string/image"
+            android:src="@android:color/white" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -55,6 +56,7 @@
             tools:text="@string/country_detail" />
     </LinearLayout>
 </LinearLayout>
+
     <ImageView
         android:id="@+id/arrow"
         android:layout_width="45dp"
@@ -62,5 +64,6 @@
         android:layout_marginTop="16dp"
         android:layout_gravity="right"
         android:scaleType="fitXY"
-        android:src="@drawable/ic_action_arrow"/>
+        android:contentDescription="@string/image"
+        android:src="@drawable/ic_action_arrow" />
 </androidx.cardview.widget.CardView>

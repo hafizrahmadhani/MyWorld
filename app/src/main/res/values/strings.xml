@@ -17,4 +17,10 @@
     <string name="population">Population</string>
     <string name="currency">Currency</string>
     <string name="official_languages">Official Languages</string>
+    <string name="log_out">Log Out</string>
+    <string name="image">image</string>
+    <string name="amari_usque_ad_mare">: Amari usque ad mare</string>
+    <string name="ottawa">: Ottawa</string>
+    <string name="english_and_france">: English and France</string>
+    <string name="federal_parliamentery">: Federal Parliamentery</string>
 </resources>

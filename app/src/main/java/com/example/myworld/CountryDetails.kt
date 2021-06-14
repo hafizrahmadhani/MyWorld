@@ -1,22 +1,18 @@
 package com.example.myworld
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.TextView
+import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_country_details.*
-import org.w3c.dom.Text
 
 class CountryDetails : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_country_details)
-        RecyclerView2()
+        recyclerView2()
     }
 
-    private fun RecyclerView2() {
+    private fun recyclerView2() {
         val call = intent.getParcelableExtra<DataModel>("Nama Negara")
         call?.imgBig_received?.let { imgBig_received.setImageResource(it) }
         title_received.text = call?.title_received
