@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:backgroundTint="#B3E5FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_item_country"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="8dp"
+            android:scaleType="fitXY"
+            android:src="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/img_item_country"
+        android:layout_toRightOf="@id/img_item_country"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/id_name_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="8dp"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            tools:text="@string/country_name"/>
+
+        <TextView
+            android:id="@+id/id_detail_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textSize="18dp"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            tools:text="@string/country_detail" />
+    </LinearLayout>
+</LinearLayout>
+    <ImageView
+        android:id="@+id/arrow"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="right"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_action_arrow"/>
+</androidx.cardview.widget.CardView>
